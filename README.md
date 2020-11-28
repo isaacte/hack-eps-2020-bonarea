@@ -50,7 +50,7 @@ En caso de haber obstáculos se informa de ello al usuario y no se tomará nungu
 
 5. En el caso de detectar una variación de los valores en referencia a la anterior comprobación se envía un aviso por pantalla con los números de las casillas que se encuentran vacías. Mapeo de las casillas:
 
-![](image3.jpg)
+![](image3.png)
 
 El sistema no requiere mucho poder computacional, ya que realiza operaciones básicas sobre imágenes y un modelo muy simple se encarga de analizar si hay obstáculos delante del lineal. Podría ser implementado en casi cualquier dispositivo con un coste muy reducido (por ejemplo Raspberry Pi)
 
