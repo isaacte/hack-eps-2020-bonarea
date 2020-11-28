@@ -1,5 +1,3 @@
-![](RackMultipart20201128-4-nhatuv_html_bf14c11aa111bd6b.png)
-
 **EQUIPO: GEIADE HACKERS**
 
 **PARTICIPANTES: ISAAC TORRES ESPUÑA, JORDI ARENAS ROMERO, DIEGO VÁZQUEZ TEBA**
@@ -41,11 +39,11 @@ En caso de no haber obstáculos delante del lineal se procede a:
 
 2. Normalización de la imagen y tratamiento mediante OpenCV. (Eliminación de las partes innecesarias de la imágen, añadir bordes de color negro al lienzo para poder realizar la rotación sin perdida de información, rotación de la imagen para facilitar el tratamiento de los espacios individuales, Cambio del _workspace_ del color de BRG a HSV). Resultado tras la normalización:
 
-![](RackMultipart20201128-4-nhatuv_html_f9829f98fbd8ed48.png)
+![](image1.png)
 
 3. Tratamiento de la imagen. Se crea una máscara de la imagen normalizada según los espacios en blanco, esto se realiza mediante el análisis de todos los colores dentro de un rango definido dentro del programa (permite la calibración para distintos entornos con tan solo la modificación de estos valores). Resultado de la aplicación de la máscara (Roja) encima de la imagen:
 
-![](RackMultipart20201128-4-nhatuv_html_8c644686b4e38013.jpg)
+![](image2.jpg)
 
 4. Segmentación y análisis. Disponiendo de la máscara con la que vamos a trabajar se divide en distintas partes correspondientes a cada compartimento de los productos, aquí se analiza el porcentaje de máscara según la cantidad de píxeles de esa región y se obtiene un porcentaje. Hemos determinado que el porcentaje de máscara óptimo para determinar que falta un producto es del 74%.
 
