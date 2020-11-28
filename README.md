@@ -35,7 +35,8 @@ El programa también detecta si los lineales se encuentran cerrados y no realiza
 **5. Funcionamiento del programa:**
 
 1. Normalización de la imagen para detectar obstáculos delante del lineal (reducción del tamaño original).
-En caso de no haber obstáculos delante del lineal se procede a:
+
+En caso de haber obstáculos se informa de ello al usuario y no se tomará nunguna otra opción, en caso contráreo:
 
 2. Normalización de la imagen y tratamiento mediante OpenCV. (Eliminación de las partes innecesarias de la imágen, añadir bordes de color negro al lienzo para poder realizar la rotación sin perdida de información, rotación de la imagen para facilitar el tratamiento de los espacios individuales, Cambio del _workspace_ del color de BRG a HSV). Resultado tras la normalización:
 
