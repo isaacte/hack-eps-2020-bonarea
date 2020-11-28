@@ -48,7 +48,9 @@ En caso de haber obstáculos se informa de ello al usuario y no se tomará nungu
 
 4. Segmentación y análisis. Disponiendo de la máscara con la que vamos a trabajar se divide en distintas partes correspondientes a cada compartimento de los productos, aquí se analiza el porcentaje de máscara según la cantidad de píxeles de esa región y se obtiene un porcentaje. Hemos determinado que el porcentaje de máscara óptimo para determinar que falta un producto es del 74%.
 
-5. En el caso de detectar una variación de los valores en referencia a la anterior comprobación se envía un aviso por pantalla (podría adaptarse fácilmente para mostrar información a un dispositivo externo) .
+5. En el caso de detectar una variación de los valores en referencia a la anterior comprobación se envía un aviso por pantalla con los números de las casillas que se encuentran vacías. Mapeo de las casillas:
+
+![](image3.jpg)
 
 El sistema no requiere mucho poder computacional, ya que realiza operaciones básicas sobre imágenes y un modelo muy simple se encarga de analizar si hay obstáculos delante del lineal. Podría ser implementado en casi cualquier dispositivo con un coste muy reducido (por ejemplo Raspberry Pi)
 
